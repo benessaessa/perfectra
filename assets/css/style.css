@@ -1,0 +1,137 @@
+@font-face {
+    font-family: gotham-light;
+    src: url(../fonts/GothamLight.ttf);
+}
+@font-face {
+    font-family: gotham-black;
+    src: url(../fonts/Gotham-Black.otf);
+}
+@font-face {
+    font-family: gotham-medium;
+    src: url(../fonts/GothamMedium.ttf);
+}
+@font-face {
+    font-family: gotham-bold;
+    src: url(../fonts/Gotham-Bold.otf);
+}
+.font-size-14{
+    font-size: 14px;
+}
+.h1,h2,h3{
+    font-family: gotham-black;
+}
+.font-medium{
+    font-family: gotham-medium;
+}
+.font-bold{
+    font-family: gotham-bold;
+}
+body{
+    font-family: gotham-light;
+}
+.textSecondary{
+    color: #002644;
+}
+.textYellow{
+    color: #f7be52;
+}
+.customHeader,.footer{
+    background-color: #002644;
+}
+.customHeader .navbar-brand img{
+    width: 80px;
+    height: 70px;
+}
+.customHeader .navbar-nav .nav-item .nav-link{
+    color: white;
+    font-family: gotham-light;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.customHeader .navbar-nav .nav-item .nav-link.active{
+    color: #f7be52;
+}
+.break{
+    width: 60px;
+    height: 4px;
+    margin: auto;
+    background-color: #FFC107;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    opacity: 1;
+}
+.breakStart{
+    width: 60px;
+    height: 4px;
+    background-color: #FFC107;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    opacity: 1;
+}
+.imgRound{
+    border-radius: 75px;
+}
+.logo-footer{
+    width: 120px;
+}
+.socials img{
+    width: 50px;
+}
+/* ===================== */
+.bg-contact{
+    background: url(../images/contact.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 80vh;
+}
+.overlaySection{
+    background: rgba(0,0,0,0.6);
+    min-height: 80vh;
+}
+.height-56{
+    height: 56px;
+}
+.contactUs textarea{
+    min-height: 13.5rem;
+}
+.btnSubmit{
+    background-color: #F7BE52;
+    height: 44px;
+}
+/* ================= */
+.carousel .carousel-item img{
+    width: 100%;
+    height: 80vh;
+    object-fit: conver;
+}
+.carousel .carousel-caption {
+    position: absolute;
+    right: 0;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: unset;
+    background:rgba(0,0,0,.5);
+}
+.carousel .introText{
+    padding-top: 40vh;
+}
+@media screen and (max-width:500px){
+    .carousel .introText{
+        padding-top: 5vh;
+    }
+    .carousel .carousel-item img{
+        width: 100%;
+        height: 350px;
+        object-fit: conver;
+    }
+    .carousel .carousel-caption h4{
+        font-size: 16px;
+    }
+}

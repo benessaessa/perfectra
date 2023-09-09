@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>perfectra</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/images/logo.png">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="http://maps.google.com/maps/api/js?key=YOUR_API_KEY" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div>
+        <nav class="navbar customHeader navbar-expand-sm px-lg-5">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" class="ms-3 ms-lg-0 pt-1" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLet" aria-controls="offcanvasTop">
+                <i class="fa fa-align-justify textYellow"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto ps-md-5 ms-lg-4 gap-4">
+                   
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu dropHeader" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">
+                                service 1
+                            </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                service 2
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-start bg-white text-dark" tabindex="-1" id="offcanvasLet" aria-labelledby="offcanvasLetLabel">
+            <div class="offcanvas-header">
+                <a href="index.html">
+                    <!-- <img src="assets/images/logo.png" class="ms-3 ms-lg-0 pt-1" width="150px" alt=""> -->
+                </a>
+                <button type="button" class="mt-2 btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="fa fa-times"></i>
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item border-light"><a class="textSecondary text-decoration-none" href="index.html">Home</a></li>
+                    <li class="list-group-item border-light"><a class="textSecondary text-decoration-none" href="projects.html">Projects</a></li>
+                    <li class="list-group-item border-light"><a class="textSecondary text-decoration-none" href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End of Header -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/images/home1.png" alt="" class="d-block">
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="introText font-bold display-4 text-uppercase"><span class="text-white">About</span>  <br> <span class="textYellow">perfectra</span></h1>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="introText">
+                            <span class="breakStart"></span>
+                            <h4 class="text-white font-medium pt-2">We are an independent firm of designers, planners, engineers, and technical specialists offering abroad range of professional services.</h4>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/contact.jpg" alt="" class="d-block">
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="introText font-bold pt-5 pt-sm-0 display-4 text-uppercase"><span class="text-white">About</span>  <br> <span class="textYellow">perfectra</span></h1>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="introText">
+                            <span class="breakStart"></span>
+                            <h4 class="text-white font-medium pt-2">We are an independent firm of designers, planners, engineers, and technical specialists offering abroad range of professional services.</h4>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    <div class="bg-white pb-5">
+        <div class="container">
+            <h3 class="pt-4 text-center font-medium textSecondary"> Trusted Partners </h3>
+            <img src="assets/images/partner.png" alt="" class="img-fluid">
+            <h3 class="pt-4 text-center font-medium textSecondary pb-3"> Locations </h3>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110502.60389525369!2d31.328505268401834!3d30.05961847053272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2z2KfZhNmC2KfZh9ix2KnYjCDZhdit2KfZgdi42Kkg2KfZhNmC2KfZh9ix2KnigKw!5e0!3m2!1sar!2seg!4v1680956697618!5m2!1sar!2seg" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            <div id="map" style="width: 100%; height: 500px;"></div>
+        </div>
+    </div>
+    <div class="footer pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="assets/images/logo-white.png" class="logo-footer" alt="">
+                    <p class="text-white font-size-14 pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ullam deserunt non pariatur, culpa iusto? Consequuntur voluptatum sapiente, repellendus ab excepturi officiis iure culpa, modi non nulla eos</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="text-center font-medium text-white pt-lg-4 pb-2"> Contact Us </h3>
+                    <span class="break"></span>
+                    <div class="d-flex align-items-center justify-content-center gap-2 pt-4">
+                        <p class="textYellow"><i class="fa fa-phone-alt"></i></p>
+                        <div>
+                            <h6 class="mb-0"><a href="tel:+201284096832" class="text-white text-decoration-none font-medium">+20 128 409 6832</a></h6>
+                            <h6><a href="tel:+201551885932" class="text-white text-decoration-none font-medium">+20 155 188 5932</a></h6>
+                        </div>
+                    </div>
+                    <p class="font-bold text-center"><i class="fa fa-envelope textYellow"></i><a class="text-white text-decoration-none font-medium ms-2" href="mailto:sales@perfectragroup.com">sales@perfectragroup.com</a></p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="socials pt-lg-5 mt-lg-5 text-center pb-3">
+                        <a href="#"><img src="assets/images/face.png" alt=""></a>
+                        <a href="#"><img src="assets/images/insta.png" alt=""></a>
+                        <a href="#"><img src="assets/images/linked.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+        AOS.init();
+        new WOW().init();
+        var locations = [
+      ['Bondi Beach', -33.890542, 151.274856, 4],
+      ['Coogee Beach', -33.923036, 151.259052, 5],
+      ['Cronulla Beach', -34.028249, 151.157507, 3],
+      ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
+      ['Maroubra Beach', -33.950198, 151.259302, 1]
+    ];
+    
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 10,
+      center: new google.maps.LatLng(-33.92, 151.25),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+    
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+    
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+      
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+    </script>
+    <script src="assets/js/file.js"></script>
+</body>
+
+</html>
