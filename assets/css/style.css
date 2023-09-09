@@ -85,10 +85,12 @@ body{
     background-size: cover;
     width: 100%;
     min-height: 80vh;
+    transform: rotateY(180deg);
 }
 .overlaySection{
     background: rgba(0,0,0,0.6);
     min-height: 80vh;
+    transform: rotateY(180deg);
 }
 .height-56{
     height: 56px;
@@ -122,6 +124,26 @@ body{
 .carousel .introText{
     padding-top: 40vh;
 }
+/* -=============================== */
+.bottomText{
+    position: absolute;
+    bottom: 2rem;
+    left: 5%;
+}
+.bg-services{
+    background: url(../images/services.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 80vh;
+    transform: rotateY(180deg);
+}
+.serviceHome{
+    border-radius: 50%;
+}
+.serviceHome img{
+    width: 80px;
+    border-radius: 50%;
+}
 @media screen and (max-width:500px){
     .carousel .introText{
         padding-top: 5vh;
@@ -133,5 +155,8 @@ body{
     }
     .carousel .carousel-caption h4{
         font-size: 16px;
+    }
+    .bg-services ,.bg-services .overlaySection{
+        min-height: 300px;
     }
 }
