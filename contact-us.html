@@ -74,16 +74,16 @@
                 <a href="tel:+201551885932" class="text-white text-decoration-none font-medium">+20 155 188 5932</a>
             </p>
             <p class="font-bold text-center"><i class="fa fa-envelope text-white"></i><a class="text-white text-decoration-none font-medium ms-2" href="mailto:sales@perfectragroup.com">sales@perfectragroup.com</a></p>
-            <form class="contactUs" onsubmit="sendEmail();reset();return false">
+            <form class="contactUs" action="#">
                 <div class="container py-5">
                     <div class="row">
                         <div class="col-md-6">
-                            <input type="text" placeholder="YOUR NAME*" class="form-control mb-lg-4 mb-3 height-56 font-medium textSecondary" required name="" id="">
-                            <input type="email" placeholder="YOUR EMAIL*" id="email" class="form-control mb-lg-4 mb-3 height-56 font-medium textSecondary" required name="" id="">
-                            <input type="tel" placeholder="YOUR PHONE*" class="form-control mb-lg-4 mb-3 height-56 font-medium textSecondary" required name="" id="">
+                            <input type="text" placeholder="YOUR NAME*" class="form-control mb-lg-4 mb-3 height-56 font-medium textSecondary" required name="name" id="">
+                            <input type="email" placeholder="YOUR EMAIL*" class="form-control mb-lg-4 mb-3 height-56 font-medium textSecondary" required name="email" id="">
+                            <input type="tel" placeholder="YOUR PHONE*" class="form-control mb-lg-4 mb-3 height-56 font-medium textSecondary" required name="phone" id="">
                         </div>
                         <div class="col-md-6">
-                            <textarea rows="8" class="form-control mb-md-4 font-medium textSecondary" placeholder="YOUR MESSAGE*" required></textarea>
+                            <textarea rows="8" class="form-control mb-md-4 font-medium textSecondary" placeholder="YOUR MESSAGE*"  name="message" required></textarea>
                         </div>
                     </div>
                     <button class="btn btnSubmit d-block m-auto px-5 font-medium text-uppercase mt-md-3 mt-4 mb-md-5">Submit</button>
@@ -128,7 +128,6 @@
         AOS.init();
         new WOW().init();
     </script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="assets/js/file.js"></script>
 </body>
 
