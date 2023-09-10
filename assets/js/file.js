@@ -43,6 +43,19 @@ var swiper1 = new Swiper(".swiper-container", {
     },
   },
 });
+function sendEmail(){
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "moh.essa2020@gmail.com",
+        Password : "me.2020@@",
+        To : 'moh.essa2020@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+}
 var locations = [
   ["Bondi Beach", -33.890542, 151.274856, 4],
   ["Coogee Beach", -33.923036, 151.259052, 5],
