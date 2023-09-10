@@ -79,6 +79,12 @@ body{
 .socials img{
     width: 50px;
 }
+.blogCard img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 40px;
+}
 /* ===================== */
 .bg-contact{
     background: url(../images/contact.jpg);
