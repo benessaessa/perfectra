@@ -43,38 +43,42 @@ var swiper1 = new Swiper(".swiper-container", {
     },
   },
 });
-var locations = [
-  ["Bondi Beach", -33.890542, 151.274856, 4],
-  ["Coogee Beach", -33.923036, 151.259052, 5],
-  ["Cronulla Beach", -34.028249, 151.157507, 3],
-  ["Manly Beach", -33.80010128657071, 151.28747820854187, 2],
-  ["Maroubra Beach", -33.950198, 151.259302, 1],
-];
 
-var map = new google.maps.Map(document.getElementById("map"), {
-  zoom: 10,
-  center: new google.maps.LatLng(-33.92, 151.25),
-  mapTypeId: google.maps.MapTypeId.ROADMAP,
-});
-
-var infowindow = new google.maps.InfoWindow();
-
-var marker, i;
-
-for (i = 0; i < locations.length; i++) {
-  marker = new google.maps.Marker({
-    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-    map: map,
+// The following example creates five accessible and
+// focusable markers.
+function initMap() {
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 8,
+    center: { lat: 30.033333, lng: 31.233334 },
   });
+  // Set LatLng and title text for the markers. The first marker (Boynton Pass)
+  // receives the initial focus when tab is pressed. Use arrow keys to
+  // move between markers; press tab again to cycle through the map controls.
+  const tourStops = [
+    [{ lat: 30.033333, lng: 31.233334 }, "Egypt"],
+    [{ lat: 32.033333, lng: 33.233334 }, "Airport Mesa"],
+    [{ lat: 34.033333, lng: 35.233334 }, "Chapel of the Holy Cross"],
+  ];
+  // Create an info window to share between markers.
+  const infoWindow = new google.maps.InfoWindow();
 
-  google.maps.event.addListener(
-    marker,
-    "click",
-    (function (marker, i) {
-      return function () {
-        infowindow.setContent(locations[i][0]);
-        infowindow.open(map, marker);
-      };
-    })(marker, i)
-  );
+  // Create the markers.
+  tourStops.forEach(([position, title], i) => {
+    const marker = new google.maps.Marker({
+      position,
+      map,
+      title: `${i + 1}. ${title}`,
+      label: `${i + 1}`,
+      optimized: false,
+    });
+
+    // Add a click listener for each marker, and set up the info window.
+    marker.addListener("click", () => {
+      infoWindow.close();
+      infoWindow.setContent(marker.getTitle());
+      infoWindow.open(marker.getMap(), marker);
+    });
+  });
 }
+
+window.initMap = initMap;
