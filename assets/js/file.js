@@ -56,8 +56,8 @@ function initMap() {
   // move between markers; press tab again to cycle through the map controls.
   const tourStops = [
     [{ lat: 30.033333, lng: 31.233334 }, "Egypt"],
-    [{ lat: 32.033333, lng: 33.233334 }, "Airport Mesa"],
-    [{ lat: 34.033333, lng: 35.233334 }, "Chapel of the Holy Cross"],
+    [{ lat: 30.043333, lng: 31.643334 }, "Egypt2"],
+    [{ lat: 30.063333, lng: 31.843334 }, "Egypt3"],
   ];
   // Create an info window to share between markers.
   const infoWindow = new google.maps.InfoWindow();
