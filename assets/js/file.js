@@ -51,7 +51,7 @@ function Send(){
   var email = document.getElementById("Email").value;
   var phone = document.getElementById("Phone").value;
   var mess = document.getElementById("Message").value;
-
+  
   var body = "Name: " + name + "<br/> Email:" + email + "<br/> Phone Number:" + phone + "<br/> Message:" + mess;
    
   console.log(body);
@@ -59,26 +59,26 @@ function Send(){
        Host : "smtp.elasticemail.com",
        Username : "moh.essa2020@gmail.com",
        Password : "F09312A819A53E358366F0D9020A9F94F841",
-       To : 'moh.essa2020@gmail.com',
-       From : "sales@perfectragroup.com",
+       To : 'sales@perfectragroup.com',
+       From : "moh.essa2020@gmail.com",
        Subject : name,
        Body : body
    }).then(
        message =>{
            if(message=='OK'){
-
+  
                swal("Successfull", "Your Data Successfull Received", "success");
            }
            else{
-
+  
                swal("Something Wrong", "Your Data is not Received", "error");
            }
        }
      );
-
+  
    
-
-}
+  
+  }
 // The following example creates five accessible and
 // focusable markers.
 function initMap() {

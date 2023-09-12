@@ -73,7 +73,7 @@
                 <a href="tel:+201551885932" class="text-white text-decoration-none font-medium">+20 155 188 5932</a>
             </p>
             <p class="font-bold text-center"><i class="fa fa-envelope text-white"></i><a class="text-white text-decoration-none font-medium ms-2" href="mailto:sales@perfectragroup.com">sales@perfectragroup.com</a></p>
-            <form class="contactUs" action="">
+            <form class="contactUs" onsubmit="reset()">
                 <div class="container py-5">
                     <div class="row">
                         <div class="col-md-6">
@@ -85,7 +85,7 @@
                             <textarea rows="8" class="form-control mb-md-4 font-medium textSecondary" placeholder="YOUR MESSAGE*" id="Message" required></textarea>
                         </div>
                     </div>
-                    <input type="submit" onclick="Send()" value="Submit" class="btn btnSubmit d-block m-auto px-5 font-medium text-uppercase mt-md-3 mt-4 mb-md-5">
+                    <input type="button" onclick="Send()" value="Submit" class="btn btnSubmit d-block m-auto px-5 font-medium text-uppercase mt-md-3 mt-4 mb-md-5">
                 </div>
             </form>
         </div>
@@ -127,6 +127,7 @@
     
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <script src="assets/js/file.js"></script>
 </body>
 
