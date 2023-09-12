@@ -83,7 +83,7 @@ function Send(){
 // focusable markers.
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 8,
+    zoom: 3,
     center: { lat: 30.033333, lng: 31.233334 },
   });
   // Set LatLng and title text for the markers. The first marker (Boynton Pass)
@@ -91,8 +91,8 @@ function initMap() {
   // move between markers; press tab again to cycle through the map controls.
   const tourStops = [
     [{ lat: 30.033333, lng: 31.233334 }, "Egypt"],
-    [{ lat: 30.043333, lng: 31.643334 }, "Egypt2"],
-    [{ lat: 30.063333, lng: 31.843334 }, "Egypt3"],
+    [{ lat: 51.1657, lng: 10.4515 }, "Germany"],
+    [{ lat: 53.5500, lng: 2.4333 }, "UK"],
   ];
   // Create an info window to share between markers.
   const infoWindow = new google.maps.InfoWindow();
