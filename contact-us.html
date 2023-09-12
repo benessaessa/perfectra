@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="assets/images/logo.png">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
@@ -74,19 +73,19 @@
                 <a href="tel:+201551885932" class="text-white text-decoration-none font-medium">+20 155 188 5932</a>
             </p>
             <p class="font-bold text-center"><i class="fa fa-envelope text-white"></i><a class="text-white text-decoration-none font-medium ms-2" href="mailto:sales@perfectragroup.com">sales@perfectragroup.com</a></p>
-            <form class="contactUs" action="#">
+            <form class="contactUs" action="">
                 <div class="container py-5">
                     <div class="row">
                         <div class="col-md-6">
-                            <input type="text" placeholder="YOUR NAME*" class="form-control mb-lg-4 mb-3 height-56 font-medium textSecondary" required name="name" id="">
-                            <input type="email" placeholder="YOUR EMAIL*" class="form-control mb-lg-4 mb-3 height-56 font-medium textSecondary" required name="email" id="">
-                            <input type="tel" placeholder="YOUR PHONE*" class="form-control mb-lg-4 mb-3 height-56 font-medium textSecondary" required name="phone" id="">
+                            <input type="text" placeholder="YOUR NAME*" class="form-control mb-lg-4 mb-3 height-56 font-medium textSecondary" required id="Name">
+                            <input type="email" placeholder="YOUR EMAIL*" class="form-control mb-lg-4 mb-3 height-56 font-medium textSecondary"  id="Email">
+                            <input type="tel" placeholder="YOUR PHONE*" class="form-control mb-lg-4 mb-3 height-56 font-medium textSecondary"  id="Phone">
                         </div>
                         <div class="col-md-6">
-                            <textarea rows="8" class="form-control mb-md-4 font-medium textSecondary" placeholder="YOUR MESSAGE*"  name="message" required></textarea>
+                            <textarea rows="8" class="form-control mb-md-4 font-medium textSecondary" placeholder="YOUR MESSAGE*" id="Message" required></textarea>
                         </div>
                     </div>
-                    <button class="btn btnSubmit d-block m-auto px-5 font-medium text-uppercase mt-md-3 mt-4 mb-md-5">Submit</button>
+                    <input type="submit" onclick="Send()" value="Submit" class="btn btnSubmit d-block m-auto px-5 font-medium text-uppercase mt-md-3 mt-4 mb-md-5">
                 </div>
             </form>
         </div>
@@ -121,13 +120,13 @@
         </div>
     </div>
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/wow.min.js"></script>
-    <script>
-        AOS.init();
-        new WOW().init();
-    </script>
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="assets/js/file.js"></script>
 </body>
 
