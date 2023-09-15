@@ -20,43 +20,41 @@
 <body>
 
     <!-- Header -->
-    <div>
-        <nav class="navbar customHeader navbar-expand-sm px-lg-5 pe-2">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.png" class="ms-3 ms-lg-0 pt-1" alt="">
+    <nav class="navbar customHeader navbar-expand-sm px-lg-5 pe-2">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.png" class="ms-3 ms-lg-0 pt-1" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLet" aria-controls="offcanvasTop">
+            <i class="fa fa-align-justify textYellow"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto ps-md-5 ms-lg-4 gap-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-us.html">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-start bg-white text-dark" tabindex="-1" id="offcanvasLet" aria-labelledby="offcanvasLetLabel">
+        <div class="offcanvas-header">
+            <a href="index.html">
+                <!-- <img src="assets/images/logo.png" class="ms-3 ms-lg-0 pt-1" width="150px" alt=""> -->
             </a>
-            <button class="navbar-toggler" type="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLet" aria-controls="offcanvasTop">
-                <i class="fa fa-align-justify textYellow"></i>
+            <button type="button" class="mt-2 btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa fa-times"></i>
             </button>
-            <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="navbar-nav me-auto ps-md-5 ms-lg-4 gap-4">
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact-us.html">Contact us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="offcanvas offcanvas-start bg-white text-dark" tabindex="-1" id="offcanvasLet" aria-labelledby="offcanvasLetLabel">
-            <div class="offcanvas-header">
-                <a href="index.html">
-                    <!-- <img src="assets/images/logo.png" class="ms-3 ms-lg-0 pt-1" width="150px" alt=""> -->
-                </a>
-                <button type="button" class="mt-2 btn" data-bs-dismiss="offcanvas" aria-label="Close">
-                    <i class="fa fa-times"></i>
-                </button>
-            </div>
-            <div class="offcanvas-body">
-                <p class="border-bottom border-light pb-3 fw-bold"><a href="index.html" class="textSecondary text-decoration-none">Home</a></p>
-                <p class="border-bottom border-light pb-3 fw-bold"><a href="services.html" class="textSecondary text-decoration-none">Services</a></p>
-                <p class="border-bottom border-light pb-3 fw-bold"><a href="projects.html" class="textSecondary text-decoration-none">Projects</a></p>
-                <p class="border-bottom border-light pb-3 fw-bold"><a href="contact-us.html" class="textSecondary text-decoration-none">Contact Us</a></p>
-            </div>
+        </div>
+        <div class="offcanvas-body">
+            <p class="border-bottom border-light pb-3 fw-bold"><a href="index.html" class="textSecondary text-decoration-none">Home</a></p>
+            <p class="border-bottom border-light pb-3 fw-bold"><a href="services.html" class="textSecondary text-decoration-none">Services</a></p>
+            <p class="border-bottom border-light pb-3 fw-bold"><a href="projects.html" class="textSecondary text-decoration-none">Projects</a></p>
+            <p class="border-bottom border-light pb-3 fw-bold"><a href="contact-us.html" class="textSecondary text-decoration-none">Contact Us</a></p>
         </div>
     </div>
     <!-- End of Header -->
