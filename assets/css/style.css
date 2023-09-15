@@ -51,6 +51,9 @@ body{
 .customHeader .navbar-nav .nav-item .nav-link.active{
     color: #f7be52;
 }
+.customHeader .navbar-toggler:focus{
+    box-shadow: none;
+}
 .break{
     width: 60px;
     height: 4px;
