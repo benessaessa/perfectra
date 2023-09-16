@@ -44,28 +44,26 @@ var swiper1 = new Swiper(".swiper-container", {
     },
   },
 });
-function Send(){
+function sendEmail(){
 
           
-  var name = document.getElementById("Name").value;
-  var email = document.getElementById("Email").value;
-  var phone = document.getElementById("Phone").value;
-  var mess = document.getElementById("Message").value;
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var phone = document.getElementById("phone").value;
+  var mess = document.getElementById("message").value;
   
   var body = "Name: " + name + "<br/> Email:" + email + "<br/> Phone Number:" + phone + "<br/> Message:" + mess;
    
   console.log(body);
    Email.send({
-       Host : "smtp.elasticemail.com",
-       Username : "moh.essa2020@gmail.com",
-       Password : "F09312A819A53E358366F0D9020A9F94F841",
-       To : 'sales@perfectragroup.com',
-       From : "moh.essa2020@gmail.com",
+       SecureToken: "9213808c-13e7-49cb-90ca-45876261ffe0",
+       To : 'essa@pencil-designs.com',
+       From : document.getElementById("email").value,
        Subject : name,
        Body : body
    }).then(
        message =>{
-           if(message=='OK'){
+           if(message == 'OK'){
   
                swal("Successfull", "Your Data Successfull Received", "success");
            }
@@ -75,9 +73,6 @@ function Send(){
            }
        }
      );
-  
-   
-  
   }
 // The following example creates five accessible and
 // focusable markers.

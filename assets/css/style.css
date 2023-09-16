@@ -165,7 +165,7 @@ body{
     /* height: 100%; */
     object-fit: cover;
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:575px){
     .carousel .introText{
         padding-top: 5vh;
     }
@@ -179,5 +179,9 @@ body{
     }
     .bg-services ,.bg-services .overlaySection{
         min-height: 300px;
+    }
+    .customHeader .navbar-collapse{
+        padding-top: 3rem;
+        padding-bottom: 1rem;
     }
 }
