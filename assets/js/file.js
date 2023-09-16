@@ -44,37 +44,39 @@ var swiper1 = new Swiper(".swiper-container", {
     },
   },
 });
-function sendEmail(){
+var fname = document.getElementById("name");
+var email = document.getElementById("email");
+var phone = document.getElementById("phone");
+var description = document.getElementById("description");
+submit.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    let body = `
+    <h1>Name: </h1>${fname.value}
+    <br>
+    <h1>Email: </h1>${email.value}
+    <br>
+    <h1>Phone Number: </h1>${phone.value}
+    <br>
+    <h1>Message: </h1>${description.value}
+    `;
+    Email.send({
+      SecureToken: "9213808c-13e7-49cb-90ca-45876261ffe0",
+      To : 'essa@pencil-designs.com',
+      From : "moh.essa2020@gmail.com",
+      Subject : fname,
+      Body : body
+    }).then(
+      message =>{
+        if(message=='OK'){
 
-          
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var phone = document.getElementById("phone").value;
-  var mess = document.getElementById("message").value;
-  
-  var body = "Name: " + name + "<br/> Email:" + email + "<br/> Phone Number:" + phone + "<br/> Message:" + mess;
-   
-  console.log(body);
-   Email.send({
-       SecureToken: "9213808c-13e7-49cb-90ca-45876261ffe0",
-       To : 'essa@pencil-designs.com',
-       From : document.getElementById("email").value,
-       Subject : name,
-       Body : body
-   }).then(
-       message =>{
-           if(message == 'OK'){
-  
-               swal("Successfull", "Your Data Successfull Received", "success");
-           }
-           else{
-  
-               swal("Something Wrong", "Your Data is not Received", "error");
-           }
-       }
-     );
-  }
-// The following example creates five accessible and
+            swal("Successfull", "Your Data Successfull Received", "success");
+        }
+        else{
+            swal("Something Wrong", "Your Data is not Received", "error");
+        }
+      }
+    );
+});
 // focusable markers.
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
