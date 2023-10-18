@@ -63,7 +63,7 @@ submit.addEventListener('submit',(e)=>{
       SecureToken: "9213808c-13e7-49cb-90ca-45876261ffe0",
       To : 'essa@pencil-designs.com',
       From : "moh.essa2020@gmail.com",
-      Subject : fname,
+      Subject : "Welcome from perfectra",
       Body : body
     }).then(
       message =>{
