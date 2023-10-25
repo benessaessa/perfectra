@@ -87,9 +87,9 @@ function initMap() {
   // receives the initial focus when tab is pressed. Use arrow keys to
   // move between markers; press tab again to cycle through the map controls.
   const tourStops = [
-    [{ lat: 30.033333, lng: 31.233334 }, "Egypt"],
-    [{ lat: 51.1657, lng: 10.4515 }, "Germany"],
-    [{ lat: 53.5500, lng: 2.4333 }, "UK"],
+    [{ lat: 30.033333, lng: 31.233334 }, "Egypt , BUILDING 85, MAADI, CAIRO"],
+    [{ lat: 51.1657, lng: 10.4515 }, "Germany ,  HEIDELBERG IM NEUENHEIMER, 69120, DEUTSCHLAND"],
+    [{ lat: 53.5500, lng: 2.4333 }, "UK ,  HOXTON SQ, LONDON, UK"],
   ];
   // Create an info window to share between markers.
   const infoWindow = new google.maps.InfoWindow();
