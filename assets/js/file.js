@@ -77,3 +77,40 @@ submit.addEventListener('submit',(e)=>{
       }
     );
 });
+// focusable markers.
+function initMap() {
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 3,
+    center: { lat: 30.033333, lng: 31.233334 },
+  });
+  // Set LatLng and title text for the markers. The first marker (Boynton Pass)
+  // receives the initial focus when tab is pressed. Use arrow keys to
+  // move between markers; press tab again to cycle through the map controls.
+  const tourStops = [
+    [{ lat: 29.95893, lng: 31.25943 }, "Egypt , BUILDING 85, MAADI, CAIRO"],
+    [{ lat: 49.41351, lng: 8.68447 }, "Germany ,  HEIDELBERG IM NEUENHEIMER, 69120, DEUTSCHLAND"],
+    [{ lat: 51.52773 , lng: 0.08086 }, "UK ,  HOXTON SQ, LONDON, UK"],
+  ];
+  // Create an info window to share between markers.
+  const infoWindow = new google.maps.InfoWindow();
+
+  // Create the markers.
+  tourStops.forEach(([position, title], i) => {
+    const marker = new google.maps.Marker({
+      position,
+      map,
+      title: `${i + 1}. ${title}`,
+      label: `${i + 1}`,
+      optimized: false,
+    });
+
+    // Add a click listener for each marker, and set up the info window.
+    marker.addListener("click", () => {
+      infoWindow.close();
+      infoWindow.setContent(marker.getTitle());
+      infoWindow.open(marker.getMap(), marker);
+    });
+  });
+}
+
+window.initMap = initMap;
