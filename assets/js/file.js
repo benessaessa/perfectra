@@ -80,7 +80,7 @@ submit.addEventListener('submit',(e)=>{
 // focusable markers.
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 3,
+    zoom: 3.3,
     center: { lat: 30.033333, lng: 31.233334 },
   });
   // Set LatLng and title text for the markers. The first marker (Boynton Pass)
